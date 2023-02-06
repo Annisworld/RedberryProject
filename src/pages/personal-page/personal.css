@@ -38,10 +38,12 @@ i {
   align-items: center;
   margin-top: 0;
   padding-top: 0;
+  height: 35px;
 }
 .pers-info {
   font-size: 24px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .top-p {
   font-size: 20px;
@@ -51,7 +53,7 @@ i {
   width: 800px;
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
+  margin-top: 77px;
   font-size: 16px;
   font-weight: 500;
   justify-content: space-between;
@@ -78,7 +80,7 @@ i {
 .pic {
   display: flex;
   align-items: center;
-  margin: 50px auto;
+  margin: 54px auto;
 }
 .pic p {
   font-size: 18px;
@@ -118,7 +120,7 @@ i {
   width: 800px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .email label {
   font-size: 16px;
@@ -186,7 +188,7 @@ input::-webkit-inner-spin-button {
   border-radius: 4px;
   color: white;
   padding: 14px 35px 14px 35px;
-  margin-top: 170px;
+  margin-top: 150px;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "helvetica neue";
@@ -195,5 +197,4 @@ input::-webkit-inner-spin-button {
 .generatedCV {
   width: 822px;
   height: 200px;
-  border: 1px solid black;
 }
