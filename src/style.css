@@ -10,4 +10,33 @@ body {
 
 button {
   text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 38.7%;
+  width: 464px;
+  background-color: #1A1A1A;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.logo{
+  position: absolute;
+  bottom: 26%;
+  right: 28%;
+}
+.red-logo{
+  position: absolute;
+  top: 25px;
+  left: 70px;
+}
+hr{
+  margin-top: 90px;
+  width: 1780px;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+}
+a:visited{
+  color: #FFFFFF;
 }
