@@ -82,21 +82,6 @@ i {
   align-items: center;
   margin: 54px auto;
 }
-.pic p {
-  font-size: 18px;
-  font-weight: 500;
-}
-.pic button {
-  background-color: #0e80bf;
-  height: 28px;
-  width: 107px;
-  border: none;
-  font-size: 14px;
-  color: white;
-  border-radius: 4px;
-  margin-left: 40px;
-  cursor: pointer;
-}
 .about {
   font-size: 16px;
   font-weight: 500;
@@ -143,16 +128,16 @@ i {
   color: #2e2e2eb0;
   margin: 0;
 }
-.mobile {
+.phone {
   width: 800px;
   display: flex;
   flex-direction: column;
 }
-.mobile label {
+.phone label {
   font-size: 16px;
   font-weight: 500;
 }
-.mobile input {
+.phone input {
   width: 800px;
   height: 48px;
   border: 1px solid #bcbcbc;
@@ -169,7 +154,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.mobile p {
+.phone p {
   font-size: 14px;
   font-weight: 300;
   color: #2e2e2eb0;
@@ -197,4 +182,37 @@ input::-webkit-inner-spin-button {
 .generatedCV {
   width: 822px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.CV-name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#CV-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+#photo-label {
+  background-color: #0e80bf;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.CV-basic-info {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.CV-first-part {
+  border-bottom: grey solid 1px;
+}
+.CV-error.border {
+  border: red solid 1px;
 }

@@ -9,11 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link rel="stylesheet" href="personal.css" />
-    <script defer type="module" src="personal.js"></script>
     <title>Personal-page</title>
   </head>
   <body>
-    <i class="fas fa-chevron-left"></i>
+    <i class="fas fa-chevron-left" id="mainPage"></i>
     <div class="container">
       <div class="top">
         <p class="pers-info">პირადი ინფო</p>
@@ -24,40 +23,51 @@
         <div class="first-name" id="first-name-container">
           <label for="first-name">სახელი</label>
           <br />
-          <input type="text" id="firstname" placeholder="ანზორ" />
+          <input class="input" type="text" id="firstname" placeholder="ანზორ" />
           <p>მინიმუმ 2 ასო, ქართული ასოები</p>
           <div id="firstname-error-message-container"></div>
         </div>
         <div class="last-name" id="last-name-container">
           <label for="last-name">გვარი</label>
           <br />
-          <input type="text" id="lastname" placeholder="მუმლაძე" />
+          <input class="input" type="text" id="lastname" placeholder="მუმლაძე" />
           <p>მინიმუმ 2 ასო, ქართული ასოები</p>
           <div id="lastname-error-message-container"></div>
         </div>
       </div>
       <div class="pic">
-        <p>პირადი ფოტოს ატვირთვა</p>
-        <button>ატვირთვა</button>
+        <label>პირადი ფოტოს ატვირთვა</label>
+        <label for="userPhoto" id="photo-label">ატვირთვა</label>
+        <input
+          type="file"
+          name="user-photo"
+          id="userPhoto"
+          style="display: none"
+        />
       </div>
       <div class="about">
         <p>ჩემ შესახებ (არასავალდებულო)</p>
-        <textarea placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
+        <textarea placeholder="ზოგადი ინფო შენ შესახებ" id="basicInfo"></textarea>
       </div>
       <div class="email">
         <label for="email">ელ.ფოსტა</label>
-        <input type="email" id="email" placeholder="anzorr666@redberry.ge" />
+        <input class="input" type="email" id="email" placeholder="anzorr666@redberry.ge" />
         <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
       </div>
-      <div class="mobile">
-        <label for="mobile">მობილურის ნომერი</label>
-        <input type="number" id="mobile" placeholder="+995 551 12 34 56" />
+      <div class="phone">
+        <label for="phone">მობილურის ნომერი</label>
+        <input class="input" type="number" id="phone" placeholder="+995 551 12 34 56" />
         <p>უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</p>
       </div>
       <div class="btn">
-        <button class="next">შემდეგი</button>
+        <button class="next" id="nextPage">შემდეგი</button>
       </div>
     </div>
     <div class="generatedCV" id="generatedCV"></div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.2/rxjs.umd.js"
+    ></script>
+    <script defer type="module" src="personal.js"></script>
   </body>
 </html>
