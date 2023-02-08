@@ -1,4 +1,5 @@
 import { generateErrors } from "./generators.js";
+import { setLocalStorage } from "./populateLocalStorage.js";
 
 export function checkValidation(val) {
   const name = document.getElementById(val).value;
@@ -12,7 +13,7 @@ function checkForErrors(type, name, container) {
   const errorMessageArray = validateName(name);
   removeExistingChildren(container);
   errorMessageArray.length
-    ? generateErrors(errorMessageArray, container)
+    ? generateErrors(type, errorMessageArray, container)
     : setLocalStorage(type, name);
 }
 
@@ -20,10 +21,6 @@ function removeExistingChildren(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
-}
-
-function setLocalStorage(type, name) {
-  localStorage.setItem(type, name);
 }
 
 function validateName(name) {
